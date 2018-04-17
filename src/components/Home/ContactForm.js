@@ -17,7 +17,8 @@ class ContactForm extends React.Component {
       return (
         <form
           id="contact"
-          action="https://formspree.io/mail@tameramitchell.com"
+          name="contact"
+          netlify
           method="POST"
           onSubmit={this.handleSubmit}>
           <label>Name</label>
