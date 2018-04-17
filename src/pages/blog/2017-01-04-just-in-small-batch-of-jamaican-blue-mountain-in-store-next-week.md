@@ -1,5 +1,6 @@
 ---
 templateKey: blog-post
+buildPage: true
 title: 'Just in: small batch of Jamaican Blue Mountain in store next weekend'
 date: 2017-01-04T15:04:10.000Z
 description: >-
