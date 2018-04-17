@@ -24,6 +24,8 @@ export default class IndexPage extends React.Component {
         />
         <Banner />
         <FeaturesSection />
+        <TravelSection
+          posts={posts.filter(post => post.node.frontmatter.templateKey === 'blog-post')} />
         <ContactSection />
         <AboutSection />
       </div>
@@ -41,10 +43,10 @@ IndexPage.propTypes = {
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(limit: 2, sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
-          excerpt(pruneLength: 400)
+          excerpt(pruneLength: 200)
           id
           fields {
             slug
@@ -52,6 +54,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             templateKey
+            excerptImage
             date(formatString: "MMMM DD, YYYY")
           }
         }

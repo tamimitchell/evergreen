@@ -3,24 +3,24 @@ import Link from 'gatsby-link'
 import BlogPostPreview from '../Blog/BlogPostPreview'
 
 const TravelSection = (props) => {
-  const content = props.content;
-
   return (
     <section id="two" className="wrapper style3 special">
       <div className="inner">
         <header className="major">
-          <h2>{content.travel_section_title[0].text}</h2>
-          <p>{content.travel_section_subtitle[0].text}</p>
-          <p>{content.travel_section_blurb[0].text}</p>
+          <h2>Travel is my life</h2>
+          <p>I'm a full time RVer with my pup Belle, chasing a full life and new adventures.</p>
+          <p>This blog is my attempt to record and share my life as I go.</p>
         </header>
         <section className="spotlights">
           {props.posts.map(edge =>
-            <BlogPostPreview node={edge.node} />
+            <BlogPostPreview node={edge.node} key={edge.node.id}/>
           )}
         </section>
         <footer className="major">
           <ul className="actions">
-            <li><a href="#" className="button">{content.travel_section_call_to_action[0].text}</a></li>
+            <li>
+              <Link to="blog" className="button">More Posts</Link>
+            </li>
           </ul>
         </footer>
       </div>

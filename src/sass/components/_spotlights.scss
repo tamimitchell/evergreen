@@ -47,10 +47,6 @@
 					left: 0;
 				}
 			}
-
-			&:last-child {
-				padding-bottom: 3.5em;
-			}
 		}
 
 		@include breakpoint(medium) {
