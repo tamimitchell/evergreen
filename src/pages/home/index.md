@@ -1,8 +1,7 @@
 ---
-templateKey: 'home'
-buildPage: false
 banner:
-  title: 'Evergreen ~ Ever Growing'
-  subtitle: 'Tami Mitchell'
-  blurb: 'Digital Nomad ~ Adventurer ~ Lifelong Learner'
+  blurb: Digital Nomad \~ **Adventurer** \~ Lifelong Learner
+  subtitle: Tami Mitchell
+  title: Evergreen ~ Ever Growing
 ---
+
