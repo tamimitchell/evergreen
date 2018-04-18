@@ -22,7 +22,7 @@ export default class IndexPage extends React.Component {
             class: 'landing'
           }}
         />
-        <Banner />
+        <Banner content={data.homeContent.frontmatter.banner} />
         <FeaturesSection />
         <ContactSection />
         <AboutSection />
@@ -41,7 +41,18 @@ IndexPage.propTypes = {
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    homeContent: markdownRemark(id: { regex: "/home/index.md/" }) {
+      frontmatter {
+        banner {
+          title
+          subtitle
+          blurb
+        }
+      }
+    }
+    allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+      ) {
       edges {
         node {
           excerpt(pruneLength: 400)
