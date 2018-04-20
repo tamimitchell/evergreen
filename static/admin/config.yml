@@ -33,13 +33,114 @@ collections:
                 widget: string
               },
               {
-                label: Subtitle,
-                name: subtitle,
+                label:  Subtitle,
+                name:   subtitle,
                 widget: string
               },
               {
-                label: Blurb,
-                name: blurb,
-                widget: markdown
+                label:  Blurb,
+                name:   blurb,
+                widget: text
               }
+            ]}
+          - {label: FeaturesSection, name: featuresSection, widget: object, fields: [
+              {
+                label:  Title,
+                name:   title,
+                widget: string
+              },
+              {
+                label:  Subtitle,
+                name:   subtitle,
+                widget: string
+              },
+              {
+                label:  Blurb,
+                name:   blurb,
+                widget: text
+              },
+              {
+                label:  Call To Action,
+                name:   callToAction,
+                widget: string
+              },
+              {
+                label:  Features,
+                name:   features,
+                widget: list,
+                fields: [{
+                  label:  Title,
+                  name:   title,
+                  widget: string
+                },
+                {
+                  label:  Blurb,
+                  name:   blurb,
+                  widget: text
+                },
+                {
+                  label:  Icon Class,
+                  name:   iconClass,
+                  widget: string
+                }]
+              }
+            ]}
+          - {label: Contact Section, name: contactSection, widget: object, fields: [
+              {
+                label:  Title,
+                name:   title,
+                widget: string
+              },
+              {
+                label:  Blurb,
+                name:   blurb,
+                widget: text
+              },
+              {
+                label:  Call To Action,
+                name:   callToAction,
+                widget: string
+              },
+              {
+                label:  Thank You Message,
+                name:   thankYouMessage,
+                widget: string
+              }
+            ]}
+          - {label: Banner, name: banner, widget: object, fields: [
+              {
+                label:  Title,
+                name:   title,
+                widget: string
+              },
+              {
+                label:  Subtitle,
+                name:   subtitle,
+                widget: string
+              },
+              {
+                label:  Blurb,
+                name:   blurb,
+                widget: text
+              },
+              {
+                label:  Image 1,
+                name:   image1,
+                widget: image
+              },
+              {
+                label:  Image 2,
+                name:   image2,
+                widget: image
+              },
+              {
+                label:  Image 3,
+                name:   image3,
+                widget: image
+              },
+              {
+                label:  Image 4,
+                name:   image4,
+                widget: image
+              },
             ]}

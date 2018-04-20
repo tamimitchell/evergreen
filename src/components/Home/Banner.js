@@ -10,9 +10,7 @@ const Banner = (props) => {
         <span className="icon fa-tree fal style2"></span>
         <h1>{content.title}</h1>
         <h3>{content.subtitle}</h3>
-        <p>
-          <HTMLContent content={content.blurb} />
-        </p>
+        <HTMLContent content={content.blurb} />
       </header>
     </section>
   );

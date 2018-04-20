@@ -3,10 +3,10 @@ import Img from "gatsby-image";
 
 const FourUp = (props) => {
   const images = [
-    props.image1URL,
-    props.image2URL,
-    props.image3URL,
-    props.image4URL
+    props.image1,
+    props.image2,
+    props.image3,
+    props.image4
   ];
 
   return (
@@ -14,7 +14,7 @@ const FourUp = (props) => {
       {images.map((image, index) =>
         <div key={index} className="6u">
           <span className="image fit">
-            <img src={image} />
+            <img src={image.image} />
           </span>
         </div>
       )}

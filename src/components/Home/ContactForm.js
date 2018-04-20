@@ -18,7 +18,7 @@ class ContactForm extends React.Component {
         <form
           id="contact"
           name="contact"
-          netlify
+          netlify="true"
           method="POST"
           onSubmit={this.handleSubmit}>
           <label>Name</label>
@@ -28,13 +28,13 @@ class ContactForm extends React.Component {
           <label>Message</label>
           <textarea type="text" id="message" name="message" required />
           <ul className="actions">
-            <li><button type="submit" className="button">Send Tami a Message</button></li>
+            <li><button type="submit" className="button">{this.props.callToAction}</button></li>
           </ul>
         </form>
       );
     } else {
       return (
-        <p>Thank you for your message! Tami will get back to you shortly.</p>
+        <p>{this.props.thankYouMessage}</p>
       )
     }
   }

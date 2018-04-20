@@ -23,9 +23,9 @@ export default class IndexPage extends React.Component {
           }}
         />
         <Banner content={data.homeContent.frontmatter.banner} />
-        <FeaturesSection />
-        <ContactSection />
-        <AboutSection />
+        <FeaturesSection content={data.homeContent.frontmatter.featuresSection} />
+        <ContactSection content={data.homeContent.frontmatter.contactSection} />
+        <AboutSection content={data.homeContent.frontmatter.aboutSection} />
       </div>
     )
   }
@@ -47,6 +47,32 @@ export const pageQuery = graphql`
           title
           subtitle
           blurb
+        }
+        featuresSection {
+          title
+          subtitle
+          blurb
+          callToAction
+          features {
+            title
+            blurb
+            iconClass
+          }
+        }
+        contactSection {
+          title
+          blurb
+          callToAction
+          thankYouMessage
+        }
+        aboutSection {
+          title
+          subtitle
+          blurb
+          image1 { image }
+          image2 { image }
+          image3 { image }
+          image4 { image }
         }
       }
     }
