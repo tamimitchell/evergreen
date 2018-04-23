@@ -108,6 +108,7 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
+            subtitle
             templateKey
             previewImage
             tags

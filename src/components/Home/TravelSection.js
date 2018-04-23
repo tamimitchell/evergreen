@@ -16,7 +16,7 @@ const TravelSection = (props) => {
         </header>
         <section className="spotlights">
           {posts.map(edge =>
-            <BlogPostPreview post={edge.node} />
+            <BlogPostPreview post={edge.node} key={edge.node.id} />
            )}
         </section>
         <footer className="major">

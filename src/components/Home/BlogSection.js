@@ -16,7 +16,7 @@ const BlogSection = (props) => {
         </header>
         <section className="features">
           {posts.map(edge =>
-            <BlogPostPreview post={edge.node} />
+            <BlogPostPreview post={edge.node} key={edge.node.id} />
            )}
         </section>
         <footer className="major">

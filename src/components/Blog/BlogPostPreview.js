@@ -8,6 +8,8 @@ const BlogPostPreview = (props) => {
     <section>
       <span className="image"><img src={post.frontmatter.previewImage} /></span>
       <h4>{post.frontmatter.title}</h4>
+      <p><strong>{post.frontmatter.subtitle}</strong></p>
+
       <p>{post.excerpt}</p>
       <ul className="actions">
         <li>
