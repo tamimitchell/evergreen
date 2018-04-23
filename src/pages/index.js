@@ -30,8 +30,14 @@ export default class IndexPage extends React.Component {
         />
         <Banner content={data.homeContent.frontmatter.banner} />
         <FeaturesSection content={data.homeContent.frontmatter.featuresSection} />
-        <TravelSection content={data.homeContent.frontmatter.travelSection} posts={travelPosts} />
-        <BlogSection content={data.homeContent.frontmatter.blogSection} posts={otherPosts} />
+
+        {travelPosts.length > 2 &&
+          <TravelSection content={data.homeContent.frontmatter.travelSection} posts={travelPosts} />
+        }
+
+        {otherPosts.length > 2 &&
+          <BlogSection content={data.homeContent.frontmatter.blogSection} posts={otherPosts} />
+        }
         <ContactSection content={data.homeContent.frontmatter.contactSection} />
         <AboutSection content={data.homeContent.frontmatter.aboutSection} />
       </div>
