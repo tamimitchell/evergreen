@@ -2,14 +2,16 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const BlogPostPreview = (props) => {
+  const post = props.post;
+
   return (
     <section>
-      <span className="image"><img src="images/pic01.jpg" alt="" /></span>
-      <h4>{props.node.data.title[0].text}</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla imperdiet, lorem in pretium aliquet, lacus dui tristique lacus, vel convallis justo lectus in augue. Tempus pellentesque iaculis imperdiet et elementum.</p>
+      <span className="image"><img src={post.frontmatter.previewImage} /></span>
+      <h4>{post.frontmatter.title}</h4>
+      <p>{post.excerpt}</p>
       <ul className="actions">
         <li>
-          <Link to={props.node.slugs[0]} className="button">Read More</Link>
+          <Link to={post.fields.slug} className="button">Read More</Link>
         </li>
       </ul>
     </section>
