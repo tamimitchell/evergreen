@@ -69,6 +69,22 @@
 			color: inherit;
 			text-decoration: none;
 		}
+
+		&.style1 {
+			color: _palette(accent1, fg-light);
+		}
+
+		&.style2 {
+			color: _palette(accent2, fg-light);
+		}
+
+		&.style3 {
+			color: _palette(accent3, fg-light);
+		}
+
+		&.style4 {
+			color: _palette(accent4, fg-light);
+		}
 	}
 
 	h2 {
