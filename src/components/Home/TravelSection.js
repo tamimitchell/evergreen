@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import BlogPostPreview from '../Blog/BlogPostPreview'
+import BlogPostCard from '../Blog/BlogPostCard'
 
 const TravelSection = (props) => {
   const content = props.content;
@@ -16,7 +16,7 @@ const TravelSection = (props) => {
         </header>
         <section className="spotlights">
           {posts.map(edge =>
-            <BlogPostPreview post={edge.node} key={edge.node.id} />
+            <BlogPostCard post={edge.node} key={edge.node.id} />
            )}
         </section>
         <footer className="major">

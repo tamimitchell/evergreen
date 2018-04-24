@@ -39,11 +39,15 @@
 	}
 
 	a {
-		text-decoration: underline;
+		text-decoration: none;
 
 		&:hover {
 			text-decoration: none;
 		}
+	}
+
+	p > a {
+		text-decoration: underline;
 	}
 
 	strong, b {
