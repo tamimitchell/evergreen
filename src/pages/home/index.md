@@ -20,12 +20,12 @@ travelSection:
   title: Travel is my life
   subtitle: I'm a full time RVer with my pup Belle, chasing a full life and new adventures.
   blurb: This blog is my attempt to record and share my life as I go.
-  callToAction: More Posts
+  callToAction: More Travel Posts
 blogSection:
   title: I love to learn
   subtitle: Aside from travel, I occasionally write about other topics.
   blurb: These are some shiny things I wanted to share!
-  callToAction: More Posts
+  callToAction: All Posts
 contactSection:
   title: 'Contact Me'
   blurb: "Let me know if there's something I can help you with, or maybe you just want to say hi. I welcome both!"

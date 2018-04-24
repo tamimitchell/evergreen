@@ -21,7 +21,7 @@ const TravelSection = (props) => {
         </section>
         <footer className="major">
           <ul className="actions">
-            <li><a href="#" className="button">{content.callToAction}</a></li>
+            <li><a href="/tags/travel/" className="button">{content.callToAction}</a></li>
           </ul>
         </footer>
       </div>

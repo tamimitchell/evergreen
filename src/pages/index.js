@@ -13,12 +13,10 @@ export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props
     const travelPosts = data.allMarkdownRemark.edges
-                                .filter(post => (post.node.frontmatter.templateKey === 'blog-post' &&
-                                                 post.node.frontmatter.tags &&
+                                .filter(post => (post.node.frontmatter.tags &&
                                                  post.node.frontmatter.tags.includes('travel')))
     const otherPosts = data.allMarkdownRemark.edges
-                                .filter(post => (post.node.frontmatter.templateKey === 'blog-post' &&
-                                                 post.node.frontmatter.tags &&
+                                .filter(post => (post.node.frontmatter.tags &&
                                                  !post.node.frontmatter.tags.includes('travel')))
 
     return (
@@ -104,6 +102,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
+        filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
       ) {
       edges {
         node {

@@ -3,23 +3,18 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import BlogPostCard from '../Components/Blog/BlogPostCard'
 
-class TagRoute extends React.Component {
+class BlogIndexPage extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges
-    const tag = this.props.pathContext.tag
     const title = this.props.data.site.siteMetadata.title
     const totalCount = this.props.data.allMarkdownRemark.totalCount
-    const tagHeader = `${totalCount} post${
-      totalCount === 1 ? '' : 's'
-    } tagged with “${tag}”`
 
     return (
       <section id="main" className="section wrapper style1 special">
-        <Helmet title={`${tag} | ${title}`} />
+        <Helmet title={title} />
         <div className="inner">
           <header className="major special">
-            <h2>Posts</h2>
-            <h3 className="title is-size-4 is-bold-light">{tagHeader}</h3>
+            <h2>All Posts</h2>
           </header>
           <div className="content">
             <section className="features">
@@ -34,10 +29,10 @@ class TagRoute extends React.Component {
   }
 }
 
-export default TagRoute
+export default BlogIndexPage
 
-export const tagPageQuery = graphql`
-  query TagPage($tag: String) {
+export const blogIndexPageQuery = graphql`
+  query BlogIndexPage {
     site {
       siteMetadata {
         title
@@ -46,7 +41,7 @@ export const tagPageQuery = graphql`
     allMarkdownRemark(
       limit: 1000
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tags: { in: [$tag] } } }
+      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
     ) {
       totalCount
       edges {
