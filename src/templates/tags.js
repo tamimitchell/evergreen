@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
-import BlogPostCard from '../Components/Blog/BlogPostCard'
+import BlogPostCard from '../components/Blog/BlogPostCard'
 
 class TagRoute extends React.Component {
   render() {

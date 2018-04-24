@@ -6,19 +6,22 @@ import Footer from '../components/Footer'
 
 import '../sass/main.scss'
 
-const TemplateWrapper = ({ children }) => (
-  <div>
-    {location.pathname !== '/' &&
-      <Header />
-    }
-    <Helmet title="Evergreen ~ Ever Growing" />
-    {children()}
-    <Footer />
-  </div>
-)
+class TemplateWrapper extends React.Component {
 
-TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+  render() {
+   const { location, children } = this.props
+
+   return (
+      <div>
+        {location.pathname !== '/' &&
+          <Header />
+        }
+        <Helmet title="Evergreen ~ Ever Growing" />
+        {children()}
+        <Footer />
+      </div>
+    )
+  }
 }
 
 export default TemplateWrapper

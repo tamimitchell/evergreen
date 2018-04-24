@@ -21,7 +21,7 @@ const BlogSection = (props) => {
         </section>
         <footer className="major">
           <ul className="actions">
-            <li><a href="/blog" className="button">{content.callToAction}</a></li>
+            <li><a href="/blog/" className="button">{content.callToAction}</a></li>
           </ul>
         </footer>
       </div>
