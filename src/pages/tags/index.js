@@ -6,26 +6,19 @@ import Link from 'gatsby-link'
 const TagsPage = ({
   data: { allMarkdownRemark: { group }, site: { siteMetadata: { title } } },
 }) => (
-  <section className="section">
+  <section id="main" class="wrapper style1">
     <Helmet title={`Tags | ${title}`} />
-    <div className="container content">
-      <div className="columns">
-        <div
-          className="column is-10 is-offset-1"
-          style={{ marginBottom: '6rem' }}
-        >
-          <h1 className="title is-size-2 is-bold-light">Tags</h1>
-          <ul className="taglist">
-            {group.map(tag => (
-              <li key={tag.fieldValue}>
-                <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-                  {tag.fieldValue} ({tag.totalCount})
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
+    <div className="inner">
+      <h1 className="title is-size-2 is-bold-light">Tags</h1>
+      <ul className="taglist">
+        {group.map(tag => (
+          <li key={tag.fieldValue}>
+            <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+              {tag.fieldValue} ({tag.totalCount})
+            </Link>
+          </li>
+        ))}
+      </ul>
     </div>
   </section>
 )

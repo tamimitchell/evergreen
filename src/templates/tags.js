@@ -1,17 +1,11 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
+import BlogPostCard from '../Components/Blog/BlogPostCard'
 
 class TagRoute extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges
-    const postLinks = posts.map(post => (
-      <li key={post.node.fields.slug}>
-        <Link to={post.node.fields.slug}>
-          <h2 className="is-size-2">{post.node.frontmatter.title}</h2>
-        </Link>
-      </li>
-    ))
     const tag = this.props.pathContext.tag
     const title = this.props.data.site.siteMetadata.title
     const totalCount = this.props.data.allMarkdownRemark.totalCount
@@ -20,20 +14,19 @@ class TagRoute extends React.Component {
     } tagged with “${tag}”`
 
     return (
-      <section className="section">
+      <section id="main" className="section wrapper style1">
         <Helmet title={`${tag} | ${title}`} />
-        <div className="container content">
-          <div className="columns">
-            <div
-              className="column is-10 is-offset-1"
-              style={{ marginBottom: '6rem' }}
-            >
-              <h3 className="title is-size-4 is-bold-light">{tagHeader}</h3>
-              <ul className="taglist">{postLinks}</ul>
-              <p>
-                <Link to="/tags/">Browse all tags</Link>
-              </p>
-            </div>
+        <div className="inner">
+          <header className="major special">
+            <h2>Posts</h2>
+            <h3 className="title is-size-4 is-bold-light">{tagHeader}</h3>
+          </header>
+          <div className="content">
+            <section className="spotlights">
+              {posts.map(edge =>
+                <BlogPostCard post={edge.node} key={edge.node.id} />
+               )}
+            </section>
           </div>
         </div>
       </section>
@@ -63,6 +56,10 @@ export const tagPageQuery = graphql`
           }
           frontmatter {
             title
+            subtitle
+            templateKey
+            previewImage
+            tags
           }
         }
       }
