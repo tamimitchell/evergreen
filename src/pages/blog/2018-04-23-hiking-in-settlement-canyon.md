@@ -1,5 +1,6 @@
 ---
 templateKey: blog-post
+buildPage: true
 title: Hiking in Settlement Canyon
 subtitle: >-
   Learning to appreciate the good moments in life even when I want to be

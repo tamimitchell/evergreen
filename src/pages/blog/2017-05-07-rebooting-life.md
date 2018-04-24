@@ -1,5 +1,6 @@
 ---
 templateKey: blog-post
+buildPage: true
 title: Rebooting Life
 subtitle: >-
   Why I’m writing this blog ~ Why I needed a reboot to turn Someday into Today ~
