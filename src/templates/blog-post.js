@@ -8,7 +8,6 @@ import Content, { HTMLContent } from '../components/Content'
 export const BlogPostTemplate = ({
   content,
   contentComponent,
-  description,
   tags,
   title,
   subtitle,
@@ -54,7 +53,6 @@ export const BlogPostTemplate = ({
 BlogPostTemplate.propTypes = {
   content: PropTypes.string.isRequired,
   contentComponent: PropTypes.func,
-  description: PropTypes.string,
   title: PropTypes.string,
   subtitle: PropTypes.string,
   helmet: PropTypes.instanceOf(Helmet),
@@ -67,7 +65,6 @@ const BlogPost = ({ data }) => {
     <BlogPostTemplate
       content={post.html}
       contentComponent={HTMLContent}
-      description={post.frontmatter.description}
       helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
@@ -93,7 +90,6 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         subtitle
-        description
         tags
       }
     }
