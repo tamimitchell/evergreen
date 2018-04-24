@@ -12,8 +12,6 @@ const BlogPostCard = (props) => {
           <h4>{post.frontmatter.title}</h4>
           <p><strong>{post.frontmatter.subtitle}</strong></p>
         </header>
-
-        <p>{post.excerpt}</p>
       </Link>
     </section>
   )
