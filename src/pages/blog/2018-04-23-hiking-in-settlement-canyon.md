@@ -1,14 +1,13 @@
 ---
 templateKey: blog-post
-buildPage: true
 title: Hiking in Settlement Canyon
 subtitle: >-
   Learning to appreciate the good moments in life even when I want to be
   somewhere else.
 date: '2017-06-11T21:55:12-06:00'
-weather: 70°F Sunny
-location: 84074, Tooele, UT, United States
 previewImage: /img/settlement6.jpeg
+weather: 70°F Sunny
+location: '84074, Tooele, UT, United States'
 tags:
   - travel
   - hiking
@@ -18,17 +17,17 @@ I’ve always had a love/hate relationship with Utah. People who don’t live he
 
 In all of Tooele County, my very favorite place is Settlement Canyon - and Left Hand Fork trail in particular. This county is made up of a lot of dry desert split by a few mountain ranges where you can find junipers or pines if you go high enough.
 
-![](img/rush-valley.jpeg)
+![](/img/rush-valley.jpeg)
 
 But Settlement Canyon is green! There are maples, pines, grass and flowers! During a few months in spring, a little creek runs down to Settlement Reservoir from the mountains and makes all the difference.
 
-![](img/settlement1)
+![](/img/settlement1)
 
-![](img/settlement2)
+![](/img/settlement2)
 
 And if you take Left Hand Fork trail for a few miles, you’ll find aspen trees! After climbing out of a hot desert, this feels like absolute heaven for a forest lover like me. It’s the only place I know where initials carved in trees adds to the experience.
 
-![](img/settlement3.jpeg)
+![](/img/settlement3.jpeg)
 
 In high school, I used to escape up to Settlement as much as I possibly could. The first time I came up here was riding horses with my Dad. I still remember following him around a corner and seeing the beautiful stands of aspens for the first time. My horse was warm under me, the air was cool, and the contrast of white against so much green took my breath away. This trail is where I learned to deal with my fear of heights, how to race horses at full speed through trees you have to duck below and around, and how to be project calm if they start panicking and things feel terrifying. (Also to not take rodeo horses up steep Utah hills that make them panic.)
 
@@ -44,12 +43,12 @@ Hiking up this trail after so many years of being away from it brought back so m
 
 This section is where you break out of the the aspens and pines into this cute little meadow. On a horse, this is where you lean forward and push into a gallop!
 
-![](img/settlement5)
+![](/img/settlement5)
 
 The best part of Left Hand Fork isn’t actually the aspens, though. It’s when you climb up a hill and suddenly there’s this incredibly green hidden canyon, and it feels like maybe you’re the only one who’s ever seen it.
 
 Look at all that green. Is this what Oregon or New Zealand is like? I have to know.
 
-![](img/settlement6.jpeg)
+![](/img/settlement6.jpeg)
 
-![](img/settlement7)
+![](/img/settlement7)
