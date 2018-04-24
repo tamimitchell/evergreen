@@ -29,11 +29,11 @@ export default class IndexPage extends React.Component {
         <Banner content={data.homeContent.frontmatter.banner} />
         <FeaturesSection content={data.homeContent.frontmatter.featuresSection} />
 
-        {travelPosts.length > 2 &&
+        {travelPosts.length > 0 &&
           <TravelSection content={data.homeContent.frontmatter.travelSection} posts={travelPosts} />
         }
 
-        {otherPosts.length > 2 &&
+        {otherPosts.length > 0 &&
           <BlogSection content={data.homeContent.frontmatter.blogSection} posts={otherPosts} />
         }
         <ContactSection content={data.homeContent.frontmatter.contactSection} />

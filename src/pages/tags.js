@@ -9,16 +9,22 @@ const TagsPage = ({
   <section id="main" class="wrapper style1">
     <Helmet title={`Tags | ${title}`} />
     <div className="inner">
-      <h1 className="title is-size-2 is-bold-light">Tags</h1>
-      <ul className="taglist">
-        {group.map(tag => (
-          <li key={tag.fieldValue}>
-            <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-              {tag.fieldValue} ({tag.totalCount})
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <header className="major special">
+        <h1>Tags</h1>
+      </header>
+      <div className="content">
+        <p className="taglist">
+          {group.map(tag => (
+            <span key={tag.fieldValue}>
+              <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+                {tag.fieldValue} ({tag.totalCount})
+              </Link>
+              &nbsp;
+              &nbsp;
+            </span>
+          ))}
+        </p>
+      </div>
     </div>
   </section>
 )
