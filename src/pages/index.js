@@ -105,7 +105,7 @@ export const pageQuery = graphql`
         node {
           id
           sizes(maxWidth: 1240 ) {
-            ...GatsbyImageSharpSizes
+            ...GatsbyImageSharpSizes_tracedSVG
           }
         }
       }
