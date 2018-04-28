@@ -12,6 +12,8 @@ import Link from 'gatsby-link'
 export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props
+    console.log(data);
+
     const travelPosts = data.allMarkdownRemark.edges
                                 .filter(post => (post.node.frontmatter.tags &&
                                                  post.node.frontmatter.tags.includes('travel')))
@@ -74,13 +76,11 @@ export const pageQuery = graphql`
         travelSection {
           title
           subtitle
-          blurb
           callToAction
         }
         blogSection {
           title
           subtitle
-          blurb
           callToAction
         }
         contactSection {
@@ -125,7 +125,6 @@ export const pageQuery = graphql`
             title
             subtitle
             templateKey
-            previewImage
             tags
           }
         }

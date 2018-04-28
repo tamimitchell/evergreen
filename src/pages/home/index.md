@@ -19,12 +19,10 @@ featuresSection:
 travelSection:
   title: The Road is my Home
   subtitle: I'm a full time RVer - Here's where I share my thoughts on a life of travel
-  blurb:
   callToAction: More Travel Posts
 blogSection:
   title: I love to learn
   subtitle: Aside from travel, I also write about other topics
-  blurb: 
   callToAction: All Posts
 contactSection:
   title: 'Contact Me'

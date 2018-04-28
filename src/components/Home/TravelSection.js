@@ -12,7 +12,6 @@ const TravelSection = (props) => {
         <header className="major">
           <h2>{content.title}</h2>
           <p>{content.subtitle}</p>
-          <p>{content.blurb}</p>
         </header>
         <section className="spotlights">
           {posts.map(edge =>

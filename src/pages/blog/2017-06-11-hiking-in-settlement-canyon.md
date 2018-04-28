@@ -7,7 +7,6 @@ subtitle: >-
 date: '2017-06-11T21:55:12-06:00'
 weather: 70°F Sunny
 location: 84074, Tooele, UT, United States
-previewImage: /img/settlement6.jpeg
 tags:
   - travel
   - hiking

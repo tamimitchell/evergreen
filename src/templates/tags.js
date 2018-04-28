@@ -58,7 +58,6 @@ export const tagPageQuery = graphql`
             title
             subtitle
             templateKey
-            previewImage
             tags
           }
         }
