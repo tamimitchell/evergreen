@@ -1,29 +1,30 @@
 ---
 templateKey: blog-post
+buildPage: true
 title: Hiking in Settlement Canyon
 subtitle: >-
   Learning to appreciate the good moments in life even when I want to be
   somewhere else.
 date: '2017-06-11T21:55:12-06:00'
-previewImage: /img/settlement6.jpeg
 weather: 70°F Sunny
-location: '84074, Tooele, UT, United States'
+location: 84074, Tooele, UT, United States
+previewImage: /img/settlement6.jpeg
 tags:
   - travel
   - hiking
   - utah
 ---
+
 I’ve always had a love/hate relationship with Utah. People who don’t live here light up when they hear the word ‘Utah’ - I’m pretty sure they’re thinking of majestic national parks, idealistic ski resorts, and maybe Moab or the Uintas. I tend to think of sagebrush deserts, a lack of community for people who aren’t of a particular religion, and months of dealing with bitter cold, inversion, and huge drifts of dirty snow covering town streets. Mostly it’s a general feeling of being trapped in places and circumstances I don’t want to be in. But that all stems from my past. The reality is that I’m not actually trapped here, my family who I love dearly live here, and there really is a lot of beautiful nature to explore. Hiking in Settlement Canyon today really clarified these feelings for me.
 
 In all of Tooele County, my very favorite place is Settlement Canyon - and Left Hand Fork trail in particular. This county is made up of a lot of dry desert split by a few mountain ranges where you can find junipers or pines if you go high enough.
 
-![](/img/rush-valley.jpeg)
+<post-image options="medium center" src="/img/rush-valley.jpeg"></post-image>
 
 But Settlement Canyon is green! There are maples, pines, grass and flowers! During a few months in spring, a little creek runs down to Settlement Reservoir from the mountains and makes all the difference.
 
-![](/img/settlement1)
+<two-column-image-grid imageURLs='["/img/settlement1.jpeg", "/img/settlement2.jpeg"]'></two-column-image-grid>
 
-![](/img/settlement2)
 
 And if you take Left Hand Fork trail for a few miles, you’ll find aspen trees! After climbing out of a hot desert, this feels like absolute heaven for a forest lover like me. It’s the only place I know where initials carved in trees adds to the experience.
 
@@ -37,7 +38,7 @@ Back in the present day, I was a crazy mix of feelings. Free and strong, excited
 
 She did - I remember we hit a certain point of the trail and both teared up a bit. The only thing more magical than finding a place you love is sharing it with someone who gets it just as deeply.
 
-![](img/settlement4.jpeg)
+![](/img/settlement4.jpeg)
 
 Hiking up this trail after so many years of being away from it brought back so many memories of who I was in high school. Worried about college, what I’d do with my life, how I was going to find the ‘perfect guy’ to make life whole. I just wanted to go back tell myself it'll be alright, enjoy the good things in life where you’re at, follow what makes your heart grow, and just stay free. I wonder, what would my future self tell me now? Maybe the same things.
 
