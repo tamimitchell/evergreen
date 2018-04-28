@@ -125,6 +125,7 @@ export const pageQuery = graphql`
             title
             subtitle
             templateKey
+            previewImage
             tags
           }
         }

@@ -53,6 +53,7 @@ export const blogIndexPageQuery = graphql`
             title
             subtitle
             templateKey
+            previewImage
             tags
           }
         }
