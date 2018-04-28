@@ -37,7 +37,7 @@ export default class IndexPage extends React.Component {
           <BlogSection content={data.homeContent.frontmatter.blogSection} posts={otherPosts} />
         }
         <ContactSection content={data.homeContent.frontmatter.contactSection} />
-        <AboutSection content={data.homeContent.frontmatter.aboutSection} />
+        <AboutSection content={data.homeContent.frontmatter.aboutSection} images={data.homeImages.edges} />
       </div>
     )
   }
@@ -97,6 +97,16 @@ export const pageQuery = graphql`
           image2 { image }
           image3 { image }
           image4 { image }
+        }
+      }
+    }
+    homeImages: allImageSharp(filter: {id: { regex: "/home/" }}) {
+      edges {
+        node {
+          id
+          sizes(maxWidth: 1240 ) {
+            ...GatsbyImageSharpSizes
+          }
         }
       }
     }
