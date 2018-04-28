@@ -1,5 +1,24 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import rehypeReact from 'rehype-react'
+import Link from 'gatsby-link'
+import PostImage from './Blog/PostImage'
+
+export const PostContent = ({ content, className }) => {
+  const renderAst = new rehypeReact({
+    createElement: React.createElement,
+    components: {
+      "post-link": Link,
+      "post-image": PostImage
+    },
+  }).Compiler
+
+  return (
+    <div>
+      {renderAst(content)}
+    </div>
+  )
+
+}
 
 export const HTMLContent = ({ content, className }) => (
   <div className={className} dangerouslySetInnerHTML={{ __html: content }} />
@@ -8,12 +27,5 @@ export const HTMLContent = ({ content, className }) => (
 const Content = ({ content, className }) => (
   <div className={className}>{content}</div>
 )
-
-Content.propTypes = {
-  content: PropTypes.string,
-  className: PropTypes.string,
-}
-
-HTMLContent.propTypes = Content.propTypes
 
 export default Content
