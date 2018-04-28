@@ -6,6 +6,9 @@ subtitle: >-
   Why I’m writing this blog ~ Why I needed a reboot to turn Someday into Today ~
   Where I’m going from here
 date: '2017-05-07T00:00:00-06:00'
+previewImage: /img/butler-phoenix-quote.jpeg
+weather: na
+location: na
 tags:
   - travel
 ---
