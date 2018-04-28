@@ -175,6 +175,13 @@
 		text-align: right;
 	}
 
+	.clearfix {
+		content: '';
+		display: block;
+		clear: both;
+		height: 0;
+	}
+
 	@mixin color-typography($p: null) {
 		$highlight: _palette($p, highlight);
 

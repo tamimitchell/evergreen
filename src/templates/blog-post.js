@@ -18,7 +18,7 @@ export const BlogPostTemplate = ({
     <section id="main" className="section wrapper style1">
       {helmet || ''}
       <div className="inner">
-        <header className="major special">
+        <header className="major blog special">
           <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
             {title}
           </h1>
@@ -59,6 +59,7 @@ BlogPostTemplate.propTypes = {
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
+  console.log(post)
 
   return (
     <BlogPostTemplate
@@ -81,8 +82,8 @@ BlogPost.propTypes = {
 export default BlogPost
 
 export const pageQuery = graphql`
-  query BlogPostByID($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+  query BlogPostByID($slug: String!) {
+    markdownRemark(fields: {slug: { eq: $slug }}) {
       id
       htmlAst
       frontmatter {
