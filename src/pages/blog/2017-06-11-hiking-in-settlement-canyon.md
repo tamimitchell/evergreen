@@ -3,10 +3,12 @@ templateKey: blog-post
 buildPage: true
 title: Hiking in Settlement Canyon
 subtitle: >-
-  Learning to appreciate the good moments in life even when I'm ready to be somewhere else.
+  Learning to appreciate the good moments in life even when I'm ready to be
+  somewhere else.
 date: '2017-06-11T21:55:12-06:00'
+previewImage: /img/settlement6.jpeg
 weather: 70°F Sunny
-location: 84074, Tooele, UT, United States
+location: '84074, Tooele, UT, United States'
 tags:
   - travel
   - hiking
