@@ -17,14 +17,14 @@ featuresSection:
       blurb: 'Need a website? I build portfolio sites emphasizing on being easily customizable, lightning quick loading speed, and modern design for all screen sizes.'
       iconClass: 'icon fa-magic style2'
 travelSection:
-  title: Travel is my life
-  subtitle: I'm a full time RVer with my pup Belle, chasing a full life and new adventures.
-  blurb: This blog is my attempt to record and share my life as I go.
+  title: The Road is my Home
+  subtitle: I'm a full time RVer - Here's where I share my thoughts on a life of travel
+  blurb:
   callToAction: More Travel Posts
 blogSection:
   title: I love to learn
-  subtitle: Aside from travel, I occasionally write about other topics.
-  blurb: These are some shiny things I wanted to share!
+  subtitle: Aside from travel, I also write about other topics
+  blurb: 
   callToAction: All Posts
 contactSection:
   title: 'Contact Me'
