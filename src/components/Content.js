@@ -1,7 +1,7 @@
 import React from 'react'
 import rehypeReact from 'rehype-react'
 import Link from 'gatsby-link'
-import PostImage from './Blog/PostImage'
+import StyledImage from './Images/StyledImage'
 import TwoColumnImageGrid from './Images/TwoColumnImageGrid'
 
 export const PostContent = ({ content, className }) => {
@@ -9,7 +9,7 @@ export const PostContent = ({ content, className }) => {
     createElement: React.createElement,
     components: {
       "post-link": Link,
-      "post-image": PostImage,
+      "styled-image": StyledImage,
       "two-column-image-grid": TwoColumnImageGrid
     },
   }).Compiler

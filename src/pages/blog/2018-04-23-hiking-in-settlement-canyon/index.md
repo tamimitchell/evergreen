@@ -19,7 +19,7 @@ I’ve always had a love/hate relationship with Utah. People who don’t live he
 
 In all of Tooele County, my very favorite place is Settlement Canyon - and Left Hand Fork trail in particular. This county is made up of a lot of dry desert split by a few mountain ranges where you can find junipers or pines if you go high enough.
 
-<post-image options="medium center" src="/img/rush-valley.jpeg"></post-image>
+<styled-image options="medium center" src="/img/rush-valley.jpeg"></styled-image>
 
 But Settlement Canyon is green! There are maples, pines, grass and flowers! During a few months in spring, a little creek runs down to Settlement Reservoir from the mountains and makes all the difference.
 
