@@ -6,6 +6,7 @@ const ContactSection = (props) => {
 
   return (
     <section id="four" className="wrapper style4 special-alt">
+      <a href="/thank-you">Test</a>
       <div className="inner split">
         <section>
           <header className="major special">
