@@ -20,6 +20,7 @@ class ContactForm extends React.Component {
           name="contact"
           netlify="true"
           method="POST"
+          action="/"
           onSubmit={this.handleSubmit}>
           <label>Name</label>
           <input type="text" id="name" name="name" required />
