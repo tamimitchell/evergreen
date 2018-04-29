@@ -27,6 +27,11 @@
 			> header.major {
 				padding: 0;
 			}
+
+			&.alt {
+				border-right: none;
+				border-top: none;
+			}
 		}
 
 		@include breakpoint(medium) {

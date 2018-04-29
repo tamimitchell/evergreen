@@ -7,14 +7,17 @@ const AboutSection = (props) => {
   const images = props.images.filter(image => image.node.id.includes('about'));
 
   return (
-    <section id="five" className="wrapper style1 special alt">
+    <section id="five" className="wrapper style1 special">
       <div className="inner">
-        <h2>{content.title}</h2>
-        <div className="row">
-          <div className="6u 12u(small)">
+        <header class="major">
+          <h2>{content.title}</h2>
+        </header>
+        <div className="split">
+          <div class="alt">
             <TwoColumnImageGrid images={images} />
+            <p></p>
           </div>
-          <div className="6u 12u$(small) align-left ">
+          <div>
             <h4>{content.subtitle}</h4>
             <p>{content.blurb}</p>
           </div>
