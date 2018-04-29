@@ -23,6 +23,10 @@
 			img {
 				width: 100%;
 			}
+
+			@include breakpoint(small) {
+				max-width: 100%;
+			}
 		}
 
 		&.small {
@@ -31,18 +35,34 @@
 			img {
 				width: 100%;
 			}
+
+			@include breakpoint(small) {
+				max-width: 100%;
+			}
 		}
 
 		&.left {
 			float: left;
 			margin: 0 1.5em 1em 0;
 			top: 0.25em;
+
+			@include breakpoint(small) {
+				float: none;
+				display: block;
+				margin: 0 auto;
+			}
 		}
 
 		&.right {
 			float: right;
 			margin: 0 0 1em 1.5em;
 			top: 0.25em;
+
+			@include breakpoint(small) {
+				float: none;
+				display: block;
+				margin: 0 auto;
+			}
 		}
 
 		&.center {
