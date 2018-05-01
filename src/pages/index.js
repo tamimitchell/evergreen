@@ -17,9 +17,11 @@ export default class IndexPage extends React.Component {
     const travelPosts = data.allMarkdownRemark.edges
                                 .filter(post => (post.node.frontmatter.tags &&
                                                  post.node.frontmatter.tags.includes('travel')))
+                                .slice(0, 4)
     const otherPosts = data.allMarkdownRemark.edges
                                 .filter(post => (post.node.frontmatter.tags &&
                                                  !post.node.frontmatter.tags.includes('travel')))
+                                .slice(0, 4)
 
     return (
       <div>
