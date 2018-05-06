@@ -35,17 +35,11 @@
 			background-attachment: scroll, scroll, fixed;
 			background-image:
 				url('images/angular-lines-up.svg'),
-				url('images/angular-lines-down.svg'),
-				url('../images/bg.jpg'),
 				url('../images/bg2.jpg');
 			background-position:
 				center top,
-				center bottom,
-				center top,
 				center top;
 			background-size:
-				auto,
-				auto,
 				auto,
 				cover;
 		}

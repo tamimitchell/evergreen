@@ -47,48 +47,6 @@ collections:
                 widget: text
               }
             ]}
-          - {label: FeaturesSection, name: featuresSection, widget: object, fields: [
-              {
-                label:  Title,
-                name:   title,
-                widget: string
-              },
-              {
-                label:  Subtitle,
-                name:   subtitle,
-                widget: string
-              },
-              {
-                label:  Blurb,
-                name:   blurb,
-                widget: text
-              },
-              {
-                label:  Call To Action,
-                name:   callToAction,
-                widget: string
-              },
-              {
-                label:  Features,
-                name:   features,
-                widget: list,
-                fields: [{
-                  label:  Title,
-                  name:   title,
-                  widget: string
-                },
-                {
-                  label:  Blurb,
-                  name:   blurb,
-                  widget: text
-                },
-                {
-                  label:  Icon Class,
-                  name:   iconClass,
-                  widget: string
-                }]
-              }
-            ]}
           - {label: Contact Section, name: contactSection, widget: object, fields: [
               {
                 label:  Title,

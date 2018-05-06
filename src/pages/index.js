@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Banner from '../components/Home/Banner'
-import FeaturesSection from '../components/Home/FeaturesSection'
 import TravelSection from '../components/Home/TravelSection'
 import BlogSection from '../components/Home/BlogSection'
 import ContactSection from '../components/Home/ContactSection'
@@ -12,7 +11,6 @@ import Link from 'gatsby-link'
 export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props
-    console.log(data);
 
     const travelPosts = data.allMarkdownRemark.edges
                                 .filter(post => (post.node.frontmatter.tags &&
@@ -31,7 +29,6 @@ export default class IndexPage extends React.Component {
           }}
         />
         <Banner content={data.homeContent.frontmatter.banner} />
-        <FeaturesSection content={data.homeContent.frontmatter.featuresSection} />
 
         {travelPosts.length > 0 &&
           <TravelSection content={data.homeContent.frontmatter.travelSection} posts={travelPosts} />
@@ -63,17 +60,6 @@ export const pageQuery = graphql`
           title
           subtitle
           blurb
-        }
-        featuresSection {
-          title
-          subtitle
-          blurb
-          callToAction
-          features {
-            title
-            blurb
-            iconClass
-          }
         }
         travelSection {
           title

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const NotFoundPage = () => (
+const ThankYouPage = () => (
   <div className="content">
     <header className="major special">
       <h1>Thank You</h1>
@@ -9,4 +9,4 @@ const NotFoundPage = () => (
   </div>
 )
 
-export default NotFoundPage
+export default ThankYouPage

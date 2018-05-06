@@ -4,18 +4,6 @@ banner:
   title: 'Evergreen ~ Ever Growing'
   subtitle: 'Tami Mitchell'
   blurb: 'Digital Nomad ~ Adventurer ~ Lifelong Learner'
-featuresSection:
-  title: 'I build digital tools'
-  subtitle: ''
-  blurb: 'I can help you with your next project!'
-  callToAction: 'Contact Me'
-  features:
-    - title: 'Full Stack Web Development'
-      blurb: 'I specialize in writing high quality web applications using Ruby on Rails, JavaScript, and responsive web development.'
-      iconClass: 'icon fa-diamond style2'
-    - title: 'Websites for Small Businesses'
-      blurb: 'Need a website? I build portfolio sites emphasizing on being easily customizable, lightning quick loading speed, and modern design for all screen sizes.'
-      iconClass: 'icon fa-magic style2'
 travelSection:
   title: The Road is my Home
   subtitle: I'm a full time RVer - Here's where I share my thoughts on a life of travel
